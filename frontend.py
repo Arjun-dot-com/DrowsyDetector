@@ -185,6 +185,7 @@ class Dashboard(tk.Tk):
         self.configure(bg=BG)
         self.resizable(False, False)
         self.protocol('WM_DELETE_WINDOW', self._on_close)
+        self.geometry("1080x650")
 
         self._build()
         self.after(50, self._tick)
